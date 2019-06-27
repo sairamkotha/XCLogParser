@@ -235,9 +235,9 @@ public extension BuildStep {
         var noSubSteps = self
         noSubSteps.subSteps = [BuildStep]()
         steps.append(noSubSteps)
-        for subStep in self.subSteps {
-            steps.append(contentsOf: flattenSubstep(subStep: subStep))
-        }
+        // for subStep in self.subSteps {
+        //     steps.append(contentsOf: flattenSubstep(subStep: subStep))
+        // }
         return steps
     }
 
@@ -246,14 +246,14 @@ public extension BuildStep {
         var noSubSteps = subStep
         noSubSteps.subSteps = [BuildStep]()
         details.append(noSubSteps)
-        for detail in subStep.subSteps {
-            var noSubSteps = detail
-            noSubSteps.subSteps = [BuildStep]()
-            details.append(noSubSteps)
-            if detail.subSteps.isEmpty == false {
-                details.append(contentsOf: detail.subSteps)
-            }
-        }
+        // for detail in subStep.subSteps {
+        //     var noSubSteps = detail
+        //     noSubSteps.subSteps = [BuildStep]()
+        //     details.append(noSubSteps)
+        //     if detail.subSteps.isEmpty == false {
+        //         details.append(contentsOf: detail.subSteps)
+        //     }
+        // }
         return details
     }
 
