@@ -135,16 +135,16 @@ public final class ParserBuildSteps {
                                  errorCount: errorCount,
                                  architecture: parseArchitectureFromLogSection(logSection, andType: detailType),
                                  documentURL: logSection.location.documentURLString,
-                                 warnings: warnings,
-                                 errors: errors,
+                                 warnings: [],
+                                 errors: []],
                                  notes: notes,
                                  swiftFunctionTimes: nil
                                  )
 
-            step.subSteps = try logSection.subSections.map { subSection -> BuildStep in
-                let subType: BuildStepType = type == .main ? .target : .detail
-                return try parseLogSection(logSection: subSection, type: subType, parentSection: step)
-            }
+            // step.subSteps = try logSection.subSections.map { subSection -> BuildStep in
+            //     let subType: BuildStepType = type == .main ? .target : .detail
+            //     return try parseLogSection(logSection: subSection, type: subType, parentSection: step)
+            // }
             if type == .target {
                 step.warningCount = targetWarnings
                 step.errorCount = targetErrors
