@@ -135,8 +135,8 @@ public final class ParserBuildSteps {
                                  errorCount: errorCount,
                                  architecture: parseArchitectureFromLogSection(logSection, andType: detailType),
                                  documentURL: logSection.location.documentURLString,
-                                 warnings: warnings,
-                                 errors: errors,
+                                //  warnings: warnings,
+                                //  errors: errors,
                                  notes: notes,
                                  swiftFunctionTimes: nil
                                  )
@@ -241,7 +241,7 @@ public final class ParserBuildSteps {
 
     private func parseWarningsAndErrorsFromLogSection(_ logSection: IDEActivityLogSection) -> [String: [Notice]]? {
         let notices = Notice.parseFromLogSection(logSection)
-        return ["warnings": notices.getWarnings(),
+        return ["warnings": [notices.getWarnings()],
                 "errors": notices.getErrors(),
                 "notes": notices.getNotes()]
     }

@@ -209,10 +209,10 @@ public struct BuildStep: Encodable {
     public let documentURL: String
 
     /// The warnings found in this step
-    public let warnings: [Notice]?
+    // public let warnings: [Notice]?
 
     /// The errors found in this step
-    public let errors: [Notice]?
+    // public let errors: [Notice]?
 
     /// Notes found in this step
     public let notes: [Notice]?
