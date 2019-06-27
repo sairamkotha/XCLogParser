@@ -135,8 +135,8 @@ public final class ParserBuildSteps {
                                  errorCount: errorCount,
                                  architecture: parseArchitectureFromLogSection(logSection, andType: detailType),
                                  documentURL: logSection.location.documentURLString,
-                                //  warnings: warnings,
-                                //  errors: errors,
+                                 warnings: warnings,
+                                 errors: errors,
                                  notes: notes,
                                  swiftFunctionTimes: nil
                                  )

@@ -74,8 +74,8 @@ class ChromeTracerOutputTests: XCTestCase {
                              errorCount: 0,
                              architecture: "",
                              documentURL: "",
-                            //  warnings: nil,
-                            //  errors: nil,
+                             warnings: nil,
+                             errors: nil,
                              notes: nil,
                              swiftFunctionTimes: nil
                              )
@@ -106,8 +106,8 @@ class ChromeTracerOutputTests: XCTestCase {
                              errorCount: 0,
                              architecture: "",
                              documentURL: "",
-                            //  warnings: nil,
-                            //  errors: nil,
+                             warnings: nil,
+                             errors: nil,
                              notes: nil,
                              swiftFunctionTimes: nil
                              )
@@ -134,8 +134,8 @@ class ChromeTracerOutputTests: XCTestCase {
                                 errorCount: 0,
                                 architecture: "",
                                 documentURL: "",
-                                // warnings: nil,
-                                // errors: nil,
+                                warnings: nil,
+                                errors: nil,
                                 notes: nil,
                                 swiftFunctionTimes: nil
                                 )
